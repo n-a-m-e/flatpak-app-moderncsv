@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<component type="desktop">
+  <id>com.moderncsv.ModernCSV</id>
+  <name>ModernCSV</name>
+  <developer_name>PFOJ Enterprises LLC</developer_name>
+  <update_contact>evan@moderncsv.com</update_contact>
+  <url type="homepage">https://www.moderncsv.com/</url>
+  <url type="bugtracker">https://www.moderncsv.com/report-a-bug/</url>
+  <url type="help">https://www.moderncsv.com/documentation/</url>
+  <url type="contact">https://www.moderncsv.com/contact-us/</url>
+  <project_license>LicenseRef-proprietary=https://www.moderncsv.com/license-terms/</project_license>
+  <launchable type="desktop-id">com.moderncsv.ModernCSV.desktop</launchable>
+  <summary>The Ultimate CSV Editor/Viewer for Windows, Mac, and Linux</summary>
+  <description>
+    <p>Modern CSV is a powerful tabular file editor/viewer application for Windows, Mac, and Linux. Professionals at all levels of technical proficiency use it to analyze data, check files for uploading to databases, modify configuration files, maintain customer lists, and more. We designed it to compensate for the deficiencies of spreadsheet programs in handling CSV/TSV/DSV/etc. files. We strive to create a user experience our customers describe as "blissful".</p>
+    <p>Edit CSV Files with Ease</p>
+    <p>Why should it be difficult to move a column around, duplicate a row, or split cells? With Modern CSV, it's easy.</p>
+    <p>With most commands, you can operate on multiple rows, columns, or cells at once. This makes repetitive actions effortless.</p>
+    <p>Most commands have a keyboard shortcut. If a command doesn't have one or you don't like the default, you can make your own shortcut.</p>
+    <p>Find and Arrange Your CSV Data</p>
+    <p>The Find/Replace feature has all the options you need to find what you're looking for. It can also highlight matches as you type or preview Replace operations before you do them.</p>
+    <p>If you need to sort a column, double click the column label. It uses stable sort so the order of the other columns is preserved as much as possible.</p>
+    <p>Filters use a powerful syntax that is clearly described in the filter query.</p>
+    <p>Finally, you can manually hide whichever rows or columns you want. All you have to do is select and call the hide command.</p>
+    <p>View Large CSV Files Quickly</p>
+    <p>Modern CSV is not only a powerful CSV editor, it's also a powerful CSV viewer. It comes with a read-only mode that loads large files quickly and with a small memory footprint just a fraction of the file size. In fact, it can load up to 11 times faster than Excel.</p>
+    <p>A CSV Editor That You Can Customize</p>
+    <p>We designed Modern CSV to be an application that is comfortable to use. To view your CSV files more easily, you can set the theme (light or dark), change cell sizes, or shade every other row or column.</p>
+    <p>For the keyboard ninjas, we gave most commands keyboard shortcuts that you can set to your liking.</p>
+    <p>You can also tell it how to handle files of different extensions. Do your .csv files have semi-colon delimiters in ANSI (Windows-1252, Western European) character encoding with CRLF newline characters? You can have it open and save files accordingly every time.</p>
+    <p>Additional Capabilites</p>
+    <ul>
+      <li>Multiple delimiters supported (TSV, PSV, TAB, etc.)</li>
+      <li>Multiple character encodings supported (UTF-8, UTF-16, ISO 8859, Windows-125x, CJK)</li>
+      <li>Multiple line endings supported (CRLF or LF)</li>
+      <li>Delimiter Auto-Detect</li>
+      <li>Drag and drop files or folders</li>
+      <li>Freeze header rows/columns so they're always visible</li>
+      <li>Auto-refresh when files are edited externally (optional)</li>
+      <li>RFC 4180 compliant (optional)</li>
+    </ul>
+    <p>Index of releases available here https://www.moderncsv.com/release/</p>
+  </description>
+  <categories>
+    <category>Office</category>
+    <category>Spreadsheet</category>
+  </categories>
+  <provides>
+    <mediatype>text/csv</mediatype>
+    <mediatype>text/tab-separated-values</mediatype>
+  </provides>
+  <content_rating type="oars-1.0"/>
+  <metadata_license>FSFAP</metadata_license>
+  <releases>
+    <release version="2.4.2" date="2026-04-29">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Improved context menu reliability across tables, headers, tabs, side bar, analysis views, and pivot tables.</li>
+          <li>Improved selection behavior after removing non-contiguous rows or columns; a cell is now selected after each removed block.</li>
+          <li>Fixed behavior when hiding header rows and columns.</li>
+          <li>Fixed external file refresh behavior so discarding unsaved edits also clears the undo stack.</li>
+          <li>Fixed saving CSV rows with trailing empty cells when using the All Quotes parsing standard.</li>
+          <li>Fixed File Metadata when loading a new file so it updates immediately.</li>
+          <li>Fixed File Metadata where it was showing infinite file size for large files (&gt;1 GB).</li>
+          <li>Linux: Fixed a crash when using the Set Text Editor command.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.4.1" date="2026-03-27">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Fixed issues with pasting.</li>
+          <li>Fixed sizing issues with the side bar.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.4" date="2026-03-23">
+      <description>
+        <p>Features</p>
+        <ul>
+          <li>Copy Cells to Markdown and Copy Cells to HTML commands.</li>
+          <li>When pasting, added automatic detection of text delimiters, Markdown, and HTML.</li>
+          <li>Paste Cell(s) (Special) command to manually decide how to parse text on the clipboard.</li>
+          <li>Parse Selected Cell Contents as Table command.</li>
+          <li>Sidebar: Added Rename Folder and Reveal Folder in File System to the folder context menu.</li>
+        </ul>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Behavior When File Is Changed Externally: When set to Refresh, the user is now asked what to do if they have unsaved changes.</li>
+          <li>Fixed the height of rows when Auto-Fit Row Height is enabled.</li>
+        </ul>
+        <p>Misc</p>
+        <ul>
+          <li>When editing a medium-length cell in the editor pane, the cursor now starts at the front. For shorter cells, it still starts at the back.</li>
+          <li>Added a warning for Auto-Fit when there are a lot of rows or columns. This can be disabled in settings.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.3.1" date="2026-03-03">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Improved save stability, especially when Behavior When File Is Changed Externally is set to Refresh automatically.</li>
+          <li>Improved stability in read-only mode.</li>
+          <li>Unique Values: Fixed Histogram column sort order and made the Histogram column non-selectable.</li>
+          <li>Fixed Duplicate Cell Contents To incorrectly writing into the first row in some cases.</li>
+          <li>Fixed Japanese character input issues.</li>
+          <li>Fixed selection behavior after Insert Row(s) After and Insert Column(s) After.</li>
+          <li>Improved handling of large cells (i.e. greater than 4,096 characters).</li>
+          <li>Fixed an issue where copying and pasting a cell from Excel could delete the cell to the right.</li>
+          <li>Mac: Fixed an issue where attempting to paste into the Save dialog filename field would actually paste into the table.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+        <p>Aesthetics</p>
+        <ul>
+          <li>Minor aesthetic improvements.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.3" date="2026-01-06">
+      <description>
+        <p>Minor Features</p>
+        <ul>
+          <li>Fill Selected Cells with UUID/GUID command. Comes with a UUID Type setting to use UUID v4 (random) or UUID v7 (time-ordered).</li>
+          <li>UUID/GUID generation via middle-mouse button click-drag. Press +, -, =, or number keys while dragging to generate a new UUID. Supports finding UUIDs within any string and preserving surrounding text.</li>
+        </ul>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Fixed dragging cells below the frozen header rows or to the right of the frozen header columns.</li>
+          <li>Fixed a bug in Add or Update ID Column where it would sometimes fill cells to the end of the viewable table rather than the end of the data.</li>
+          <li>Fixed the location of popup windows so they don’t appear in random places on the screen.</li>
+          <li>Middle-mouse button click-drag increment/decrement improvements: It now respects leading zeros in numbers, handles large numbers better, and does not interpret values like “INV-1001” as negative numbers. Also, hitting the key again now undoes the increment/decrement.</li>
+          <li>Fixed ctrl+left in Launcher. The shortcut to go back to the previous option is now ctrl+minus (or cmd+minus on Mac).</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+        <p>Performance</p>
+        <ul>
+          <li>Find: Improved performance when rows or columns are filtered out or hidden.</li>
+          <li>JSON/XML Import: Improved performance with both displaying file previews and with performing the conversion.</li>
+        </ul>
+        <p>Misc</p>
+        <ul>
+          <li>Improvements to Import Window’s UI</li>
+          <li>Go to Cell: Improvement to the location parsing algorithm.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.2.4" date="2025-10-15">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Fixed Split Selected Cells Horizontally, Move Rest of Row Right when using the Split by Index option.</li>
+          <li>Linux: Fixed crash with Recent Files from the launcher.</li>
+          <li>Fixed the File Extension Options preferences tab where the only option for Line Ending was “(platform)”.</li>
+          <li>Improved ability to type Japanese characters. There are still known issues to be resolved in future releases.</li>
+          <li>Fixed Reshape Selected Cells Column-Wise so it truly works column-wise.</li>
+          <li>Fixed Save Visible Data As where it was incorrectly disabled in some circumstances.</li>
+          <li>When the Represent Columns as Letters setting is on, fixed column headers not showing correctly when some columns are hidden.</li>
+          <li>Fixed a bug with Convert Date/Time Format where recent two-digits years were converted to the 1900s instead of 2000s (e.g. “25” converted to 1925″ instead of “2025”).</li>
+          <li>Fixed newly created/saved files not appearing in the recent files list in some cases.</li>
+          <li>Fixed crash when closing a tab while editing in the editor pane.</li>
+          <li>Fixed UTF-16LE (and similar) files inserting a leading newline in the first cell of each row in some cases.</li>
+          <li>Fixed UTF-16LE regex replace appending stray characters to cells.</li>
+          <li>Fixed Save File As ignoring the line ending chosen in Save Parameters.</li>
+          <li>Solved false delimiter-length warning when saving files with no delimiters.</li>
+          <li>Mac: Fixed launcher’s cmd+left navigation back to prior option widgets.</li>
+          <li>Sidebar: In the context menu for folders, fixed Copy Folder Path to Clipboard.</li>
+          <li>Linux: Fixed Save File As or new file saves where they were omitting extensions unless typed manually.</li>
+          <li>Linux: Fixed crashes on certain commands.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.2.3" date="2025-04-14">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Fixed a crash when editor with the editor pane.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.2.2">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Print and Export to PDF: Fixed Custom page size.</li>
+          <li>Linux: Removed some unnecessary console messages.</li>
+          <li>Linux: Fixed Pivot Table. In some circumstances, it would not complete.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+        <p>Performance</p>
+        <ul>
+          <li>Improved Pivot Table’s performance.</li>
+        </ul>
+        <p>Aesthetics</p>
+        <ul>
+          <li>Small aesthetic improvements.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.2.1">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Unique Values: Fixed a bug where, when “Exclude Empty Cells” was enabled, it didn’t change the percent values to reflect their absence.</li>
+          <li>Fixed an issue where changes to the Font setting weren’t persistent across sessions.</li>
+          <li>Fixed a crash that occurs in some conditions when ctrl+shift+scrolling (or cmd+shift+scrolling on Mac).</li>
+          <li>Made the side bar width persist across sessions.</li>
+          <li>Print: Fixed word wrap.</li>
+          <li>Windows: Fixed window sizing issues when using multiple monitors with different scaling factors.</li>
+          <li>Windows: Fixed an issue where in some situations, upon startup, the window is tiny and in the corner of the display.</li>
+          <li>Linux: Fixed a crash when running the Duplicate File command.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.2">
+      <description>
+        <p>Major Features</p>
+        <ul>
+          <li>Print.</li>
+          <li>Export to PDF.</li>
+        </ul>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.1.2" date="2025-01-26">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Fixed Pivot Table for large files.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+        <p>Performance</p>
+        <ul>
+          <li>Mac: Fixed UI lags when working on large files.</li>
+        </ul>
+        <p>Aesthetics</p>
+        <ul>
+          <li>Minor aesthetic improvements.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.1.1">
+      <description>
+        <p>Minor Features</p>
+        <ul>
+          <li>Pivot Table: In the right-click context menu, there’s a “Copy Entire Table” option that will copy all headers and data to the clipboard.</li>
+          <li>Separated the Highlight Main Selected Cell’s Row and Column setting into two settings – one for row and one for column.</li>
+        </ul>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Solved a crash when selecting entire columns in read-only mode.</li>
+          <li>Solved a crash when importing empty or small JSON or XML files.</li>
+          <li>Fixed some bugs with the Import UI.</li>
+          <li>Fixed Pivot Tables where they would sometimes fail to load with large files.</li>
+          <li>Fixed the Find/Replace pane option button keystrokes. This meant some changes to prevent conflicts:</li>
+          <li>Case Sensitive : alt+a</li>
+          <li>Regular Expressions : alt+/</li>
+          <li>Match Whole Word : alt+shift+w</li>
+          <li>Match Whole Cell: alt+shift+l</li>
+          <li>Match Only in Selected Cells : alt+shift+s</li>
+          <li>Highlight Matches : alt+shift+h</li>
+          <li>Preview Replace : alt+shift+p</li>
+          <li>Fixed the Snap to Column/Row After Scrolling settings in the Settings window.</li>
+          <li>Fixed the Go to Cell command so it won’t immediately scroll to the top of the file when it’s called.</li>
+          <li>Fixes Statistics to not count empty fields in the Number of Data Fields metric.</li>
+          <li>Windows: Fixed an issue where in some situations, the window couldn’t be moved or resized.</li>
+          <li>Windows: Fixed sizing issues when working on multiple monitors with different DPIs.</li>
+          <li>Mac: Fixed rare cases where external windows were not appearing.</li>
+          <li>Mac: Fixed an issue where the window would not show when cmd+tabbing to it from another program.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+        <p>Performance</p>
+        <ul>
+          <li>Mac: Drastic performance improvement with the Unique Values feature. Slight performance improvement on Windows and Linux, but they were already fast to begin with. All platforms now perform at the same speed for this feature.</li>
+        </ul>
+        <p>Aesthetics</p>
+        <ul>
+          <li>Highlight Main Selected Cell’s Row/Column: Increased the contrast for better visibility.</li>
+          <li>Minor aesthetic improvements.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.1">
+      <description>
+        <p>Major Features</p>
+        <ul>
+          <li>Import JSON and XML files.</li>
+          <li>Export to JSON and XML.</li>
+          <li>Pivot Table (Premium Business)</li>
+        </ul>
+        <p>Minor Features</p>
+        <ul>
+          <li>Select Entire Row(s)/Column(s) (Header Excluded) commands.</li>
+          <li>Increment/Decrement numerical values via mouse drag. Use the middle mouse button to click on a cell with a number. Drag it and hit a number and/or the ‘-‘, ‘+’, or ‘=’ (for ‘+’) buttons.</li>
+          <li>Snap to Column/Row After Scrolling settings.</li>
+          <li>Preference window: Added a search field to “Settings” and “Keyboard Shortcuts”.</li>
+          <li>ASCII Separated Values parsing standard. Uses ASCII Unit Separator and Record Separator.</li>
+          <li>Improved handling of numbers to take into account regional differences, thousands separators, and currency symbols.</li>
+          <li>Add or Update ID Column command. (Premium)</li>
+          <li>Added Statistics – Selected Cells and Statistics – Selected Cells by Columns commands. (Premium Business)</li>
+          <li>All File Analysis tabs (Statistics, Column Analysis, Unique Values, Pivot Table): Added a “Use Thousands Separators” option. (Premium Business)</li>
+          <li>Statistics: option to exclude columns without numerical data. (Premium Business)</li>
+          <li>Sum and Mean of selected cells in the status bar. (Premium Business)</li>
+        </ul>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>When the read-only setting is enabled, new files created by the user are editable.</li>
+          <li>Improved representation of values in the File Analysis tabs so it wouldn’t show scientific notation until the number is exceptionally large (i.e. 10^15 or higher).</li>
+        </ul>
+        <p>Aesthetics</p>
+        <ul>
+          <li>Windows: Removed native Windows chrome and integrated the title bar into the theme.</li>
+          <li>Mac: Blended the title bar color with the theme.</li>
+          <li>General aesthetic improvements.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.8" date="2024-05-21">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Fixed Column Lookup when filters are present.</li>
+          <li>In View/Edit Filter(s), fixed an issue where some filter phrases wouldn’t display fully.</li>
+          <li>Fixed column width resizing when changing number of header columns and Auto-Fit Column Widths is enabled.</li>
+          <li>When Find All returns many matches, set the scroll bar handle’s minimum height to an acceptable size.</li>
+          <li>Fixed column resizing when removing columns in some situations.</li>
+          <li>Miscellaneous bug fixes and stability improvements.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.7">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Fixed navigation keys not working when a new file is pulled up.</li>
+          <li>Fixed shift selecting working only intermittently.</li>
+          <li>Fixed an issue with the config file where in rare cases, it could cause it to stall on startup.</li>
+          <li>When reloading a large file via that command launcher or menu, ensured that the table doesn’t render which can sometimes cause a crash. It was previously fixed only for reloading from the File Metadata pane.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.6">
+      <description>
+        <p>Usability</p>
+        <ul>
+          <li>Improved trackpad handling, especially on Mac. Simplified the interface so only shift causes horizontal scrolling.</li>
+          <li>Added tool tips to the file tabs to show the full file path.</li>
+        </ul>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Find/Replace: Fixed a crash when doing a Find in some circumstances.</li>
+          <li>Find/Replace: Fixed a bug when doing a Find when filters are on or rows/columns are hidden.</li>
+          <li>Find/Replace: When the table’s been transposed, Highlight Matches and Preview Replace was highlighting the wrong cells.</li>
+          <li>Unique Values: Applied the Case-Sensitive Sorting setting when sorting the values column.</li>
+          <li>Unique Values: Fixed filters so they work when a cell starts or ends with a space character.</li>
+          <li>Mac and Linux: In Unique Values, fixed the filter buttons being squashed together.</li>
+          <li>Fixed the Join commands in the case where the last cells they’re joining are empty. Before, it was not leaving separators for those cells.</li>
+          <li>Fixed a sorting issue when sorting numbers mixed with “nan” strings.</li>
+          <li>Hid table rendering while it reloads a large file just like when it loads it fresh.</li>
+        </ul>
+        <p>Performance</p>
+        <ul>
+          <li>Improved general performance when rows/columns are filtered out or hidden.</li>
+          <li>Minor performance improvements.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.5">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>File Metadata Pane: In large files (&gt;24 MB), fixed the Load Parameters fields so they’re not disabled.</li>
+          <li>Fixed Select From Main Cell To …. It was selecting entire rows or columns in some cases where it should not. Also, fixed where it was sometimes highlighting the wrong range as the user typed.</li>
+          <li>Blocked some messages from printing to the console unnecessarily.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.4">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Fixed a crash in the sidebar.</li>
+          <li>Solved a sort issue with UTF-16 encoding.</li>
+          <li>Fixed BOM handling with UTF-16 and UTF-32.</li>
+          <li>Solved a crash when sorting empty cells.</li>
+          <li>Solved a crash with the Convert Date/Time Format command.</li>
+          <li>Fixed an issue with filters where it wouldn’t recognize edits to the filter after a regular expression filter was set.</li>
+          <li>Fixed a bug, introduced in 2.0.3, where in some cases, it wouldn’t allow the user to save a file.</li>
+          <li>Changed the default keyboard shortcut for Switch to Tab 10 from alt+10 (or cmd+10 on Mac) to alt+0 (or cmd+0 on Mac).</li>
+        </ul>
+        <p>Misc</p>
+        <ul>
+          <li>Changed the name of the Edit Preferences command to Preferences.</li>
+          <li>Mac: The Preferences command now appears in the Modern CSV menu rather than the Preferences menu.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.3">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Fixed a crash with the Lower Camel Case command on empty cells.</li>
+          <li>During file save, a backup file wasn’t always saved in the event something went wrong. This has been resolved.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.2">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>Made the Move Column(s) to the Left of Column … command work.</li>
+          <li>When a new file was created and saved, the tab bar now shows it as saved.</li>
+          <li>Fixed an issue where it wouldn’t sort timestamps of a certain format.</li>
+          <li>The Find feature, under some circumstances, was unable to find some data in the first row. That has been fixed.</li>
+          <li>Prevented a crash in Append Cell Contents with the Different Text option.</li>
+          <li>In the Preferences window, fixed issues in the Keyboard Shortcuts tab regarding shortcut conflict detection and setting commands to (none).</li>
+          <li>Fixed a bug with pasting certain data from Excel.</li>
+          <li>Minor typo fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.1">
+      <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>In the Unique Values feature, it now properly escapes characters that need to be escaped.</li>
+          <li>Fixed the Open Recent Filepath feature so it avoids duplicate and empty entries.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0">
+      <description>
+        <p>Overview</p>
+        <ul>
+          <li>Improved UI and user experience.</li>
+          <li>Faster performance.</li>
+          <li>A ton of powerful features, mostly requested by current users.</li>
+          <li>Native Apple Silicon (ARM – M1, M2) compatibility.</li>
+          <li>Updated comprehensive documentation (see here).</li>
+        </ul>
+        <p>UI and User Experience Improvements</p>
+        <ul>
+          <li>Context (right-click) menus in tabs and on side bar.</li>
+          <li>Preference window. Changes no longer have to be made by editing a text file, but that option’s still available.</li>
+          <li>File Metadata pane to easily change file parameters and settings</li>
+        </ul>
+        <p>Performance</p>
+        <ul>
+          <li>Improved app loading time</li>
+          <li>Improved performance for files with many columns</li>
+          <li>Improved performance for sorting numbers</li>
+          <li>Mac: ARM (M1/M2) compatibility</li>
+        </ul>
+        <p>Features</p>
+        <ul>
+          <li>New themes: Dracula, Solarized Light, Solarized Dark</li>
+          <li>Filter with regular expressions</li>
+          <li>Column Lookup feature (similar to VLOOKUP in spreadsheet programs) [Premium Business license]</li>
+          <li>Statistics (Number of data points, sum, mean, variance, standard deviation, median, min, max, quintiles) [Premium Business license]</li>
+          <li>Column Analysis (number of fields, empty vs. non-empty fields, minimum/maximum field length, data type) [Premium Business license]</li>
+          <li>Unique Values (histogram, frequency count, filter in and out) [Premium Business license]</li>
+        </ul>
+        <p>New Settings</p>
+        <ul>
+          <li>Save With Trailing Delimiters</li>
+          <li>Text Editor</li>
+          <li>Remove Extraneous Rows/Columns on File Save</li>
+          <li>Case Sensitive Sorting</li>
+          <li>Show File Metadata</li>
+          <li>Represent Columns as Letters</li>
+          <li>Search Engine</li>
+          <li>Online Map</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>
