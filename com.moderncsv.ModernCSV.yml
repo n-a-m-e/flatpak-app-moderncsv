@@ -1,0 +1,42 @@
+app-id: com.moderncsv.ModernCSV
+runtime: org.kde.Platform
+runtime-version: '5.15-25.08'
+sdk: org.kde.Sdk
+command: com.moderncsv.ModernCSV
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --share=network
+  - --filesystem=home
+  - --device=dri
+modules:
+  - name: krb5
+    buildsystem: autotools
+    config-opts:
+      - --disable-static
+      - --disable-rpath
+      - --without-system-verto
+      - --without-tcl
+    subdir: src
+    sources:
+      - type: archive
+        url: https://kerberos.org/dist/krb5/1.22/krb5-1.22.2.tar.gz
+        sha256: 3243ffbc8ea4d4ac22ddc7dd2a1dc54c57874c40648b60ff97009763554eaf13
+  - name: ModernCSV
+    buildsystem: simple
+    build-commands:
+      - sed -i 's|Exec=.*|Exec=com.moderncsv.ModernCSV %F|' moderncsv.desktop
+      - sed -i 's|Icon=.*|Icon=com.moderncsv.ModernCSV|' moderncsv.desktop
+      - install -d /app/moderncsv
+      - cp -a moderncsv lib plugins qt.conf /app/moderncsv/
+      - install -d /app/bin
+      - ln -s /app/moderncsv/moderncsv /app/bin/com.moderncsv.ModernCSV
+      - install -Dp -m 644 moderncsv.desktop /app/share/applications/com.moderncsv.ModernCSV.desktop
+      - install -Dp -m 644 com.moderncsv.ModernCSV.appdata.xml /app/share/appdata/com.moderncsv.ModernCSV.appdata.xml
+      - for icon_size in 16 32 48 64 128 256; do install -Dp -m 644 "icons/hicolor/${icon_size}x${icon_size}/apps/moderncsv.png" "/app/share/icons/hicolor/${icon_size}x${icon_size}/apps/com.moderncsv.ModernCSV.png"; done
+    sources:
+      - type: archive
+        url: https://www.moderncsv.com/release/ModernCSV-Linux-v2.4.2.tar.gz
+        sha256: cf7f401d0585d121758828219a99a5fcdf4ec27f4d563e1fb938eb6f706deb95
+      - type: file
+        path: com.moderncsv.ModernCSV.appdata.xml
