@@ -27,9 +27,8 @@ modules:
     build-commands:
       - sed -i 's|Exec=.*|Exec=com.moderncsv.ModernCSV %F|' moderncsv.desktop
       - sed -i 's|Icon=.*|Icon=com.moderncsv.ModernCSV|' moderncsv.desktop
-      - install -d /app/moderncsv
+      - install -d /app/moderncsv /app/bin
       - cp -a moderncsv lib plugins qt.conf /app/moderncsv/
-      - install -d /app/bin
       - ln -s /app/moderncsv/moderncsv /app/bin/com.moderncsv.ModernCSV
       - install -Dp -m 644 moderncsv.desktop /app/share/applications/com.moderncsv.ModernCSV.desktop
       - install -Dp -m 644 com.moderncsv.ModernCSV.appdata.xml /app/share/appdata/com.moderncsv.ModernCSV.appdata.xml
