@@ -1,0 +1,29 @@
+app-id: com.moderncsv.ModernCSV.Legacy
+runtime: org.kde.Platform
+runtime-version: '5.15-25.08'
+sdk: org.kde.Sdk
+command: com.moderncsv.ModernCSV.Legacy
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --share=network
+  - --filesystem=home
+  - --device=dri
+modules:
+  - name: ModernCSV
+    buildsystem: simple
+    build-commands:
+      - sed -i 's|Exec=.*|Exec=com.moderncsv.ModernCSV.Legacy %F|' moderncsv.desktop
+      - sed -i 's|Icon=.*|Icon=com.moderncsv.ModernCSV.Legacy|' moderncsv.desktop
+      - install -d /app/moderncsv /app/bin
+      - cp -a moderncsv lib plugins translations qt.conf /app/moderncsv/
+      - ln -s /app/moderncsv/moderncsv /app/bin/com.moderncsv.ModernCSV.Legacy
+      - install -Dp -m 644 moderncsv.desktop /app/share/applications/com.moderncsv.ModernCSV.Legacy.desktop
+      - install -Dp -m 644 com.moderncsv.ModernCSV.Legacy.appdata.xml /app/share/appdata/com.moderncsv.ModernCSV.Legacy.appdata.xml
+      - for icon_size in 16 32 48 64 128 256; do install -Dp -m 644 "icons/hicolor/${icon_size}x${icon_size}/apps/moderncsv.png" "/app/share/icons/hicolor/${icon_size}x${icon_size}/apps/com.moderncsv.ModernCSV.Legacy.png"; done
+    sources:
+      - type: archive
+        url: https://www.moderncsv.com/release/ModernCSV-Linux-v1.3.36.1.tar.gz
+        sha256: 4137bd8909c4ffc4edb1c128486412cfe73245a2d6686b328e1a1d03e8cf5311
+      - type: file
+        path: com.moderncsv.ModernCSV.Legacy.appdata.xml
