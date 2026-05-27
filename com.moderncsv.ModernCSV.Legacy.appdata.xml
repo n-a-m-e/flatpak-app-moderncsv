@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>com.moderncsv.ModernCSV.Legacy</id>
+  <name>ModernCSV</name>
+  <developer_name>PFOJ Enterprises LLC</developer_name>
+  <update_contact>evan@moderncsv.com</update_contact>
+  <url type="homepage">https://www.moderncsv.com/</url>
+  <url type="bugtracker">https://www.moderncsv.com/report-a-bug/</url>
+  <url type="help">https://www.moderncsv.com/documentation/</url>
+  <url type="contact">https://www.moderncsv.com/contact-us/</url>
+  <project_license>LicenseRef-proprietary=https://www.moderncsv.com/license-terms/</project_license>
+  <launchable type="desktop-id">com.moderncsv.ModernCSV.Legacy.desktop</launchable>
+  <summary>The Ultimate CSV Editor/Viewer for Windows, Mac, and Linux</summary>
+  <description>
+    <p>Modern CSV is a powerful tabular file editor/viewer application for Windows, Mac, and Linux. Professionals at all levels of technical proficiency use it to analyze data, check files for uploading to databases, modify configuration files, maintain customer lists, and more. We designed it to compensate for the deficiencies of spreadsheet programs in handling CSV/TSV/DSV/etc. files. We strive to create a user experience our customers describe as "blissful".</p>
+    <p>Edit CSV Files with Ease</p>
+    <p>Why should it be difficult to move a column around, duplicate a row, or split cells? With Modern CSV, it's easy.</p>
+    <p>With most commands, you can operate on multiple rows, columns, or cells at once. This makes repetitive actions effortless.</p>
+    <p>Most commands have a keyboard shortcut. If a command doesn't have one or you don't like the default, you can make your own shortcut.</p>
+    <p>Find and Arrange Your CSV Data</p>
+    <p>The Find/Replace feature has all the options you need to find what you're looking for. It can also highlight matches as you type or preview Replace operations before you do them.</p>
+    <p>If you need to sort a column, double click the column label. It uses stable sort so the order of the other columns is preserved as much as possible.</p>
+    <p>Filters use a powerful syntax that is clearly described in the filter query.</p>
+    <p>Finally, you can manually hide whichever rows or columns you want. All you have to do is select and call the hide command.</p>
+    <p>View Large CSV Files Quickly</p>
+    <p>Modern CSV is not only a powerful CSV editor, it's also a powerful CSV viewer. It comes with a read-only mode that loads large files quickly and with a small memory footprint just a fraction of the file size. In fact, it can load up to 11 times faster than Excel.</p>
+    <p>A CSV Editor That You Can Customize</p>
+    <p>We designed Modern CSV to be an application that is comfortable to use. To view your CSV files more easily, you can set the theme (light or dark), change cell sizes, or shade every other row or column.</p>
+    <p>For the keyboard ninjas, we gave most commands keyboard shortcuts that you can set to your liking.</p>
+    <p>You can also tell it how to handle files of different extensions. Do your .csv files have semi-colon delimiters in ANSI (Windows-1252, Western European) character encoding with CRLF newline characters? You can have it open and save files accordingly every time.</p>
+    <p>Additional Capabilites</p>
+    <ul>
+      <li>Multiple delimiters supported (TSV, PSV, TAB, etc.)</li>
+      <li>Multiple character encodings supported (UTF-8, UTF-16, ISO 8859, Windows-125x, CJK)</li>
+      <li>Multiple line endings supported (CRLF or LF)</li>
+      <li>Delimiter Auto-Detect</li>
+      <li>Drag and drop files or folders</li>
+      <li>Freeze header rows/columns so they're always visible</li>
+      <li>Auto-refresh when files are edited externally (optional)</li>
+      <li>RFC 4180 compliant (optional)</li>
+    </ul>
+    <p>Index of releases available here https://www.moderncsv.com/release/</p>
+  </description>
+  <categories>
+    <category>Office</category>
+    <category>Spreadsheet</category>
+  </categories>
+  <provides>
+    <mediatype>text/csv</mediatype>
+    <mediatype>text/tab-separated-values</mediatype>
+  </provides>
+  <content_rating type="oars-1.0" />
+  <metadata_license>FSFAP</metadata_license>
+  <releases>
+    <release version="1.3.36.1" date="2023-05-25"></release>
+    <release version="1.3.33" date="2021-07-29"></release>
+    <release version="1.3.32" date="2021-07-25">
+      <description>
+        <p>Version 1.3.32</p>
+        <ul>
+          <li>When the Save Visible Data As command will result in a large file, it now gives the user options to open it read-only mode, open it in edit mode, or not open it at all.</li>
+          <li>Fixed licenses not being recognized when a second instance of the program is opened.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.31" date="2021-06-12">
+      <description>
+        <p>Version 1.3.31</p>
+        <ul>
+          <li>Fixed a bug where a second instance wouldn't open.</li>
+          <li>Fixed a bug with the Remove Selected Rows/Columns commands when filters are applied causing the filter to not update properly.</li>
+          <li>Fixed a bug with undoing Remove Selected Columns where it wouldn't work properly in some circumstances.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.30" date="2021-06-01">
+      <description>
+        <p>Version 1.3.30</p>
+        <ul>
+          <li>Fixed the Split by Index commands so they always work as expected.</li>
+          <li>Fixed cell drag and drop so it works on a single cell.</li>
+          <li>Updated the Settings file for clarity.</li>
+          <li>Fixed the Settings file so when updated, it doesn't change certain settings already set for individual tables.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.29" date="2021-05-28">
+      <description>
+        <p>Version 1.3.29</p>
+        <ul>
+          <li>Fixed a bug with tab and space delimiters defined in the File Extension Options file.</li>
+          <li>In the File Extension Options file, set the default delimiter for .csv files to "(auto)" (i.e. auto-detect delimiter). This only affects new installations.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.28" date="2021-05-24">
+      <description>
+        <p>Version 1.3.28</p>
+        <ul>
+          <li>Improved performance with the Move Rows Up/Down and Move Columns Left/Right commands.</li>
+          <li>Added support for files without extensions to the File Extension Options file, the sidebar, and the Go to File command.</li>
+          <li>Implemented a Sparse Quote parsing standard. When saving a file, it will only include surrounding quotes if the cell contains a delimiter or newline character. It doesn't affect how it reads a file.</li>
+          <li>Fixed several commands to scroll as the selection moves off the screen so the selection stays visible. Affected commands are: Select Up/Down/Left/Right (shift+arrow), Move Selected Rows/Columns/Cells, and Duplicate Rows/Columns/Cells.</li>
+          <li>Added the following commands in case the user accidentally deletes or ruins one of the preference files: Restore Settings File, Restore Keyboard Shortcuts File, and Restore File Extension Options File.</li>
+          <li>Added an Open Preference File Folder command.</li>
+          <li>Improved the Convert to Title Case command to better handle commas, dashes, and backslashes.</li>
+          <li>Fixed multi-cell editing so it shows the updates in all the cells with each keystroke.</li>
+          <li>Fixed column resizing when the Auto-Fit Column Width setting is on and header rows are frozen.</li>
+          <li>Fixed a bug when the main selected cells is beyond the data and the user selects over in some direction (i.e. shift+arrow).</li>
+          <li>Fixed a crash when the user tries to split cells by delimiter but provides a blank input for delimiter.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.27" date="2021-05-23">
+      <description>
+        <p>Version 1.3.27</p>
+        <ul>
+          <li>Improved the performance of Find and Replace.</li>
+          <li>Improved performance of copying large amounts of data.</li>
+          <li>Mild performance improvement for pasting large quantities of data.</li>
+          <li>Ensured that when changing most settings with command (e.g. Set Theme, Set Font, etc.), the changes are written to the Settings file and persist across sessions.</li>
+          <li>If the user opens a folder that has a lot of files (counting recursively), it'll pop up a warning message and allow the user to either continue or cancel. Before, it simply wouldn't open.</li>
+          <li>Fixed issues when it automatically rewrites preference files on version changes.</li>
+          <li>Mac: Fixed Open Terminal to File's Directory.</li>
+          <li>Fixed opening files from the terminal so the user can cd to different folders and open files into the already existing instance of Modern CSV without having to input the file's entire path.</li>
+          <li>Windows: Ensured that when double-clicking on a CSV file, Modern CSV will come to the front.</li>
+          <li>Fixed the Replace pane so the keyboard focus always goes to the Find field upon opening it.</li>
+          <li>Fixed right-click on row/column labels so if multiple rows/columns are selected and the user right-clicks on one of them, it won't deselect the others.</li>
+          <li>Fixed an issue where it wouldn't always scroll to the main selected cell after applying a filter.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.26" date="2021-05-22">
+      <description>
+        <p>Version 1.3.26</p>
+        <ul>
+          <li>Added a Save Visible Data As command. This will save a separate file containing only the data that is not filtered out or hidden. This also works in read-only mode (where filtering and sorting are allowed).</li>
+          <li>Added a Save After Each Edit setting. It's turned off by default.</li>
+          <li>Added an "All Quotes" parsing standard option. When saving, every cell will be surrounded by quotes.</li>
+          <li>Improved filtering performance for large files in both edit and read-only modes, especially for number inequalities (e.g. less than, greater than, etc.).</li>
+          <li>Improved sorting performance in read-only mode.</li>
+          <li>Improved performance when deleting many rows at a time.</li>
+          <li>With the Save File As command, the dialog now opens to the current file's path.</li>
+          <li>Improved the wording of the Convert Date/Time Format command for clarity.</li>
+          <li>Changed the names of a few commands for clarity.</li>
+          <li>Rearranged the menus for clarity.</li>
+          <li>Minor bug fixes.</li>
+          <li>Minor performance improvements.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.25" date="2021-05-21">
+      <description>
+        <p>Version 1.3.25</p>
+        <ul>
+          <li>Improved the sort algorithm for better results.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.24" date="2021-05-20">
+      <description>
+        <p>Version 1.3.24</p>
+        <ul>
+          <li>Status bar now reports how many cells are in the currently selected cell.</li>
+          <li>Fixed delimiter auto-detection on files without file extensions defined in the File Extension Options file.</li>
+          <li>Improved speed of copy operation marginally when copying large amounts of data.</li>
+          <li>Slight improvement in load time.</li>
+          <li>Increased maximum number of files it will allow in a folder that is opened.</li>
+          <li>Fixed pasting cells copied from Excel so non-ASCII characters are displayed correctly.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.23" date="2021-05-19">
+      <description>
+        <p>Version 1.3.23</p>
+        <ul>
+          <li>Improved performance with the Remove All Filtered Out and Hidden Data command.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.22" date="2021-05-18">
+      <description>
+        <p>Version 1.3.22</p>
+        <ul>
+          <li>Windows, Mac: Fixed horizontal scrolling with a trackpad.</li>
+          <li>Fixed a bug with parsing the escape character in filter strings.</li>
+          <li>Fixed a bug where it would not always save a file with the correct parsing standard.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.21" date="2021-05-17">
+      <description>
+        <p>Version 1.3.21</p>
+        <ul>
+          <li>Fixed bugs related to line endings.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.20" date="2021-05-16">
+      <description>
+        <p>Version 1.3.20</p>
+        <ul>
+          <li>Added line endings to the File Extension Options file. The options are "Windows" (CR LF) and "Unix" (LF). The default is set to the machine's platform.</li>
+          <li>Enabled the status bar to show the size of the table when filtered or rows/columns are hidden. This is right next to the size of the whole table in the bottom left corner.</li>
+          <li>Fixed a bug where in some circumstances, it wouldn't hide a row or column.</li>
+          <li>Windows: Fixed issues with opening files from the command line when an instance is already open.</li>
+          <li>Fixed Save File As so it saves according to the settings in the File Extension Options file.</li>
+          <li>Changed the name of Remove All Filtered and Hidden Data to Remove All Filtered Out and Hidden Data for clarity.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.19" date="2021-05-15">
+      <description>
+        <p>Version 1.3.19</p>
+        <ul>
+          <li>Mac: Made aesthetic improvements and made application text larger.</li>
+          <li>Ensured that when saving a new file, the parsing standard set in the file extensions file is applied.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.18" date="2021-05-14">
+      <description>
+        <p>Version 1.3.18</p>
+        <ul>
+          <li>Fixed a bug where the selection would go to the wrong place when rows or columns where hidden in some circumstances.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.17" date="2021-05-13">
+      <description>
+        <p>Version 1.3.17</p>
+        <ul>
+          <li>Fixed a crash with some commands when a whole row or column is selected.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.16" date="2021-05-12">
+      <description>
+        <p>Version 1.3.16</p>
+        <ul>
+          <li>Mac/Linux: Fixed a bug causing excessive CPU usage when the Find or Replace pane is open.</li>
+          <li>Mac/Linux: Ensured that when finished dragging the table's vertical or horizontal scrollbar, it snaps to the nearest row or column.</li>
+          <li>Fixed a bug where the selection could go beyond the visible table in some circumstances.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.15" date="2021-05-11">
+      <description>
+        <p>Version 1.3.15</p>
+        <ul>
+          <li>Improved how it handles the selection after calling Remove Selected Rows/Columns.</li>
+          <li>Fixed a bug where after some command calls, it wasn't scrolling to the main selected cell.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.14" date="2021-05-10">
+      <description>
+        <p>Version 1.3.14</p>
+        <ul>
+          <li>Fixed filters so empty filter strings work.</li>
+          <li>Fixed table resizing issues when applying filters.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.13" date="2021-05-09">
+      <description>
+        <p>Version 1.3.13</p>
+        <ul>
+          <li>Changed the name of the Editor Box to Editor Pane.</li>
+          <li>Fixed a bug with Remove Duplicate Rows/Columns command where it wasn't removing all duplicates in some circumstances.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.12" date="2021-05-08">
+      <description>
+        <p>Version 1.3.12</p>
+        <ul>
+          <li>Fixed a bug where the table resizes incorrectly after filtering.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.11" date="2021-05-07">
+      <description>
+        <p>Version 1.3.11</p>
+        <ul>
+          <li>Fixed a crash with inserting rows when a whole row is selected or inserting columns with a whole column selected.</li>
+          <li>Fixed issues with frozen header rows/columns not showing correctly in some circumstances.</li>
+          <li>Fixed a bug with Find Previous.</li>
+          <li>Limited the number of recent files in the Recent File menu to 25.</li>
+          <li>Ensured the same file can't appear in two different tabs.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.10" date="2021-05-06">
+      <description>
+        <p>Version 1.3.10</p>
+        <ul>
+          <li>Fixed a bug causing the program to open at the wrong window size intermittently.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.9" date="2021-05-05">
+      <description>
+        <p>Version 1.3.9</p>
+        <ul>
+          <li>Added commands Sort Selected Cells Vertically/Horizontally: Ascending/Descending. These 4 commands will sort only the selected cells. They will not preserve rows or columns.</li>
+          <li>Fixed pasting a single cell to an entire row, column, or table.</li>
+          <li>When copying a single cell, it now copies only as a single cell with no newline character at the end.</li>
+          <li>Fixed column auto-fit when duplicating cells to new columns.</li>
+          <li>Fixed a crash with the Insert Rows/Columns commands in some circumstances.</li>
+          <li>Fixed an intermittent crash with loading very large files.</li>
+          <li>Fixed an issue where very large files were sometime parsed incorrectly in read-only mode.</li>
+          <li>Fixed a bug with copying a whole file where an extra tab character was at the end of each row.</li>
+          <li>Windows: Fixed the Recent Files list so it only shows backslashes.</li>
+          <li>Windows: Fixed portable versions so the config files are all kept within the portable folder.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.8" date="2021-05-04">
+      <description>
+        <p>Version 1.3.8</p>
+        <ul>
+          <li>Fixed a bug with filtering negative numbers.</li>
+          <li>Added a Parsing Standard feature to allow the user to parse a file with either the RFC 4180 standard or by delimiter only. This includes a new column in the File Extension Options preference file.</li>
+          <li>Changed the File Extension Options file to not allow the Auto-Detect Delimiter setting to override the Delimiter column. Typing (auto) in the column will enable auto-detect for that file extension regardless of the Auto-Detect Delimiter setting.</li>
+          <li>Changed copy/paste behavior so when the user pastes a single cell, it'll paste into every selected cell, not just the main. The behavior when multiple cells are in the clipboard is unchanged.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.7" date="2021-05-03">
+      <description>
+        <p>Version 1.3.7</p>
+        <ul>
+          <li>Added support for Chinese, Japanese, and Korean character encodings.</li>
+          <li>Fixed a bug where Remove All Row(s)/Column(s) didn't work when the whole table is selected.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.6" date="2021-05-02">
+      <description>
+        <p>Version 1.3.6</p>
+        <ul>
+          <li>Linux: Fixed a bug causing it to not run in CentOS.</li>
+          <li>Fixed a minor bug with the launcher not always showing all the instructions when the OS's display is scaled.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.5" date="2021-05-01">
+      <description>
+        <p>Version 1.3.5</p>
+        <ul>
+          <li>Mac and Linux: In the Find and Replace panes, fixed Highlight Matches and Preview Replace so thet update when scrolling.</li>
+          <li>Fixed a bug where Highlight Matches and Preview Replace weren't always working when the Find or Replace window was closed and opened again.</li>
+          <li>Linux: Fixed synchronization of frozen headers with the rest of the table.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.4" date="2021-04-30">
+      <description>
+        <p>Version 1.3.4</p>
+        <ul>
+          <li>Fixed a bug with filtering rows when a table is transposed.</li>
+          <li>Fixed the launcher's option text sizes so it appears find when the OS's displayed is scaled to greater than 100%.</li>
+          <li>Fixed a bug causing a crash in some circumstances when trying to find a phrase that exists in a cell that's been filtered out.</li>
+          <li>Fixed a bug where in some circumstances, the user's delimiter preference in the File Extensions file to be overwritten with a comma when changing versions.</li>
+          <li>In the Find window when Highlight Matches is selected, enabled it to highlight new matches that appear as the user scrolls. Also ensured that the highlights update if the user edits the table.</li>
+          <li>Added a Preview Replace option to the Replace window with shortcut alt+p. It'll highlight the cells to be replaced and show inside the cells in green what the new values will be if the user selects Replace All. No actual data is being overwritten and the previews will go away when the Replace window is closed or the Preview Replace option is turned off.</li>
+          <li>In addition to the Scroll to Top command, added Scroll to Bottom, Scroll to Left, and Scroll to Right. Made the default shortcuts ctrl+home, ctrl+end, ctrl+shift+home, and ctrl+shift+end respectively ( cmd instead of ctrl for Mac).</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.3" date="2021-04-29">
+      <description>
+        <p>Version 1.3.3</p>
+        <ul>
+          <li>Fixed launcher size so it does not cut off the bottom part of instructions when the OS is configured to scale the display to >100%.</li>
+          <li>Fixed filter syntax bug.</li>
+          <li>Fixed a bug causing it to not start editing cells without clicking the mouse button in some circumstances.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.2" date="2021-04-28">
+      <description>
+        <p>Version 1.3.2</p>
+        <ul>
+          <li>Fixed filter syntax so '>0' excludes 0.</li>
+          <li>Fixed a bug causing a crash when calling a command via keystroke while holding a mouse button down.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3.1" date="2021-04-27">
+      <description>
+        <p>Version 1.3.1</p>
+        <ul>
+          <li>Fixed a bug in filters where it handled filter strings with no wildcard characters (*) improperly.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.3" date="2021-04-26">
+      <description>
+        <p>Version 1.3</p>
+        <ul>
+          <li>Improved filter syntax to accept numerical ranges, negative filters, and AND operators.</li>
+          <li>Added Insert Row(s) After and Insert Column(s) After commands. Their shortcuts are ctrl+enter and ctrl+shift+enter. The old Insert Row(s) and Insert Column(s) commands were renamed to Insert Row(s) Before and Insert Column(s) Before.</li>
+          <li>Added a Prepend Cell Contents command. It behaves just like Append Cell Contents, except it prepends rather than appends text.</li>
+          <li>Added a setting called Behavior When File is Saved Externally. The options are "refresh", "ask", and "ignore".</li>
+          <li>Added a setting called Let Editor Box Consume Navigation Keystrokes. It is set true by default. When it's true, enter and tab keystrokes will be used to navigate the text within a single cell when the editor box is on. When it's false, enter and tab keystrokes will be used to navigate across cells, just like when the editor box is disabled.</li>
+          <li>When doing a find or replace with multiple cells selected, it automatically turn on the Match Only in Selected Cells option.</li>
+          <li>When a file is saved externally and it refreshes in Modern CSV, the scroll bars will stay where they were before unless the file size has shrunk.</li>
+          <li>Added the ability to hide row/column labels with new settings called Show Row Labels and Show Column Labels.</li>
+          <li>In the light theme, changed the color of the selected cells to blue.</li>
+          <li>Changed the licensing model to freemium. Licenses bought before the change will still work.</li>
+          <li>Updated tutorial.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.10" date="2021-04-25">
+      <description>
+        <p>Version 1.2.10</p>
+        <ul>
+          <li>Fixed the Zero-Fill Whole Numbers command so it works correctly when an entire row or column is selected and so it doesn't operate on empty cells.</li>
+          <li>Added Show All Hidden Rows/Columns to the right-click menu.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.9" date="2021-04-24">
+      <description>
+        <p>Version 1.2.9</p>
+        <ul>
+          <li>Fixed a bug causing frozen header rows to cover up part of the rows below in some circumstances.</li>
+          <li>Fixed a bug causing it to incorrectly parse some improperly formatted files in read-only mode.</li>
+          <li>Windows: Made 32-bit installer and portable versions.</li>
+          <li>Added Remove All Filters and Filter Selected Row/Column with Selected Cell Contents to the right-click menu.</li>
+          <li>Fixed a bug where if a file with an extension set to open in a non-UTF-8 character encoding had a dot in the file name, it would open as UTF-8.</li>
+          <li>Windows: Upon saving, changed the newline from LF (0x0A) to CRLF (0x0D0A).</li>
+          <li>Fixed Duplicate Cell Contents so the new row/column resizes correctly when Auto-Fit Column Widths or Auto-Fit Row Heights is set.</li>
+          <li>Fixed a bug with pasting causing the last cell to be incorrectly surrounded by double-quotes in some circumstances.</li>
+          <li>Fixed a bug with Zero-Fill Whole Numbers so it now works with very large numbers and numbers with leading zeros.</li>
+          <li>Fixed Find/Replace so it finds matches for non-Roman characters with non-Unicode character encodings.</li>
+          <li>Fixed a rare crash with Find.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.8" date="2021-04-23">
+      <description>
+        <p>Version 1.2.8</p>
+        <ul>
+          <li>Fixed a bug causing frozen header rows to cover up part of the rows below in some circumstances.</li>
+          <li>Fixed a bug causing it to incorrectly parse some improperly formatted files in read-only mode.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.7" date="2021-04-22">
+      <description>
+        <p>Version 1.2.7</p>
+        <ul>
+          <li>Fixed a bug with the Hide Empty Rows/Columns commands.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.6" date="2021-04-21">
+      <description>
+        <p>Version 1.2.6</p>
+        <ul>
+          <li>Fixed a bug causing a crash when the user starts editing a cell with a non-Latin character.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.5" date="2021-04-20">
+      <description>
+        <p>Version 1.2.5</p>
+        <ul>
+          <li>Open Recent Files: Changed the number of files to 50 and fixed a bug to ensure all files make the list.</li>
+          <li>Fixed a bug to ensure that when both row and column headers are frozen, the top left corner displays correctly.</li>
+          <li>Fixed a bug causing a crash when closing a folder on some conditions.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.4" date="2021-04-19">
+      <description>
+        <p>Version 1.2.4</p>
+        <ul>
+          <li>Fixed stability issue with the new Stop Editing command when using large cells.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.3" date="2021-04-18">
+      <description>
+        <p>Version 1.2.3</p>
+        <ul>
+          <li>Made alt+i/k/j/l work while editing a cell (move selection up, down, left, or right).</li>
+          <li>Added a command to stop editing. The default shortcut is ctrl+e for Windows and Linux, cmd+e for Mac.</li>
+          <li>Ensured that as filtered rows/columns are moved around, the filter definitions are updated to reflect the moves.</li>
+          <li>Renamed the Revert File to Saved command to Reload File.</li>
+          <li>Moved the Reload File with Delimiter and Reload File with Encoding commands under the File menu.</li>
+          <li>Improved performance/stability for opening large files.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.2" date="2021-04-17">
+      <description>
+        <p>Version 1.2.2</p>
+        <ul>
+          <li>Fixed a bug causing it to erase File Extension Options between version upgrades.</li>
+          <li>Stability improvements.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2.1" date="2021-04-16">
+      <description>
+        <p>Version 1.2.1</p>
+        <ul>
+          <li>Windows: Enabled the user to type Unicode characters with alt+(Unicode decimal typed on keypad).</li>
+          <li>Fixed a bug causing the program to continue owning a file after disabling read-only mode.</li>
+          <li>Fixed a bug causing the context menu in the cell editor to not work correctly.</li>
+          <li>Fixed stability issues when opening empty files.</li>
+          <li>Fixed stability issues when deleting columns in special cases.</li>
+          <li>Fixed the Revert File to Saved command so it now reloads with the correct delimiter and encoding.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.2" date="2021-04-15">
+      <description>
+        <p>Version 1.2</p>
+        <ul>
+          <li>Added delimiter auto-detection. It is optional and enabled by default.</li>
+          <li>Added ability to hide individual rows/columns or hide empty rows/columns.</li>
+          <li>Added the Remove All Filtered and Hidden Data command.</li>
+          <li>Improved the Split Cells Horizontally/Vertically commands. They can now be split with a delimiter or by character index. They will also now insert new rows or columns instead of overwriting old data.</li>
+          <li>Convert Date/Time Format: Added ISO 8601 with date only. Also, for custom formats, characters enclosed within double quotes will not be parsed.</li>
+          <li>Added a Zero-Fill Whole Numbers command.</li>
+          <li>Improved the performance for removing and inserting rows/columns.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1.7" date="2021-04-14">
+      <description>
+        <p>Version 1.1.7</p>
+        <ul>
+          <li>Enabled scrolling while editing a cell on the right side of the window.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1.6" date="2021-04-13">
+      <description>
+        <p>Version 1.1.6</p>
+        <ul>
+          <li>Improved international support- supports folder and file paths with non-ASCII characters.</li>
+          <li>Fixed shift-click on a row or column label so it will drag the row or column even if it wasn't selected before.</li>
+          <li>Windows portable: Fixed a bug so it now saves all the config files alongside the executable.</li>
+          <li>Fixed a bug with reading UTF-16 files.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1.3" date="2021-04-12">
+      <description>
+        <p>Version 1.1.3</p>
+        <ul>
+          <li>Made portable Windows version store config information alongside the executable.</li>
+          <li>Fixed a bug causing Replace All to not work correctly in some situations.</li>
+          <li>Linux: Fixed a problem in some distributions making the folder/file names unreadable in the Open File, Open Folder, and Save File dialogs.</li>
+          <li>Minor bug fixes.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1.2" date="2021-04-11">
+      <description>
+        <p>Version 1.1.2</p>
+        <ul>
+          <li>Fixed an intermittent stability issue in loading files of a certain size.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1.1" date="2021-04-10">
+      <description>
+        <p>Version 1.1.1</p>
+        <ul>
+          <li>If a row/column is selected and the user shift-clicks on another row/column, it will now select each row between it and the first row/column (inclusive).</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.1" date="2021-04-09">
+      <description>
+        <p>Version 1.1</p>
+        <ul>
+          <li>Added a Convert Date/Time Format command. It can now convert between ISO 8601, Excel, Unix Epoch, and custom formats.</li>
+          <li>When selecting cells, shift-click will now select the cells between the clicked cell and the main cell.</li>
+          <li>Added the ability to join or split cells with newline or tab characters.</li>
+          <li>Mac and Linux: Fixed a bug causing some text to be unreadable in the dark theme.</li>
+          <li>Bug fixes with the preference files.</li>
+          <li>Fixed a bug causing it to crash on some commands when operating on entire columns or rows.</li>
+          <li>Fixed a bug with Replace Next/Previous when the Match Only in Selected Cells option is set.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0" date="2021-04-08">
+      <description>
+        <p>Version 1.0</p>
+        <ul>
+          <li>Fixed bugs and improved functionality when filters are applied.</li>
+          <li>Fixed bugs and improved functionality when the table is transposed.</li>
+          <li>For any command that requires a location input (i.e. cell, row, or column), it will scroll to and highlight the location as the user types it in.</li>
+          <li>Added filter status to the status bar.</li>
+          <li>Made the launcher slightly transparent.</li>
+          <li>For highlighted cells, added red lines around the cell borders.</li>
+          <li>Set the default keyboard shortcut for the Transpose Table command to ctrl+alt+t (Windows, Linux) or cmd+alt+t (Mac).</li>
+          <li>Fixed a bug causing the Remove Empty Rows/Columns commands to not work correctly in some circumstances.</li>
+          <li>Fixed a bug causing it to not always load a file properly when there is no delimiter.</li>
+          <li>In read-only mode, the Transpose Table command and all the sort and filter commands now work (only for display. Changes can't be saved).</li>
+          <li>Fixed minor bugs with the replace feature.</li>
+          <li>Fixed minor bugs with the filters feature.</li>
+          <li>Fixed a few bugs causing it to show the wrong table dimensions in some circumstances.</li>
+          <li>Fixed a bug causing the minimum window width to be much larger than necessary.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>
